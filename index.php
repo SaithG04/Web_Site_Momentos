@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="resources/css/Momentos.css" type="text/css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-    <title>Momentos</title>
+    <title>Momentos EiRL</title>
 </head>
 
 <body>
