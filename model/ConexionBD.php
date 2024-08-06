@@ -32,5 +32,7 @@ class ConexionBD
         // Establece la conexión a null para cerrarla
         $this->conexion = null;
     }
+    //caca de burro
 }
 ?>
+
