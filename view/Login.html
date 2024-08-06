@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Iniciar Sesión</title>
+
+</head>
+
+<body>
+    <!-- Logo -->
+    <div>
+        <img class="logo" src="resources/images/logomomentos.jpeg">
+    </div>
+
+    <h2>Iniciar Sesión</h2>
+    <form action="../controller/LoginController.php" method="post">
+        <label for="correo">Correo:</label>
+        <input type="text" name="correo" required>
+
+        <label for="contraseña">Contraseña:</label>
+        <input type="password" name="password" required>
+
+        <button type="submit">Iniciar Sesión</button>
+    </form>
+
+    <p>¿No tienes una cuenta? <a href="RegistroCliente.php">Regístrate aquí</a><br><a href="../index.php">Volver al
+            inicio</a></p>
+</body>
+
+<style>
+
+    body {
+        background-color: black; /* Fondo blanco */
+        color: #ffffff; /* Texto blanco */
+        font-family: Arial, sans-serif; /* Fuente del texto */
+        margin: 0; /* Elimina el margen predeterminado del body */
+        padding: 20px; /* Añade un espacio interno al body */
+    }
+
+  
+    h2 {
+        text-align: center; /* Centra el título */
+    }
+
+    form {
+        max-width: 400px; /* Ancho máximo del formulario */
+        margin: 0 auto; /* Centra el formulario en la página */
+    }
+
+    label {
+        display: block; /* Hace que las etiquetas ocupen toda la línea */
+        margin-bottom: 5px; /* Añade espacio debajo de las etiquetas */
+    }
+
+    input {
+        width: 100%; /* Ocupa todo el ancho disponible */
+        padding: 8px; /* Añade un poco de espacio interno alrededor del texto */
+        margin-bottom: 15px; /* Añade espacio debajo de los campos de entrada */
+    }
+
+    button {
+        background-color: #333; /* Color de fondo del botón */
+        color: #ffffff; /* Color del texto del botón */
+        padding: 10px 15px; /* Espaciado interno del botón */
+        border: none; /* Elimina el borde del botón */
+        cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    }
+
+    button:hover {
+        background-color: #555; /* Cambia el color de fondo al pasar sobre el botón */
+    }
+
+    p {
+        text-align: center; /* Centra el texto del párrafo */
+        margin-top: 20px; /* Añade espacio encima del párrafo */
+    }
+
+    a {
+        color: #ffffff; /* Color del enlace */
+    }
+</style>
+</html>

@@ -1,0 +1,418 @@
+body{
+    background-color: black;
+}
+
+
+/* ==========================================*/
+    /* Movil */
+    @media (max-width: 767px){
+       /* styles.css */
+
+/*  barra de navegación */
+nav {
+    animation:shadow-drop-center 0.4s linear both
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Utilizamos flexbox para alinear elementos horizontalmente */
+}
+
+li {
+    margin-right: 20px; /* Espaciado entre elementos de la barra de navegación */
+    margin-left: 1px;
+}
+
+/* Estilo de los enlaces */
+a {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    animation: aparecer 2s ease-in-out forwards;
+    font-size: 20px;
+}
+
+/* Cambiar el color del enlace al pasar el cursor sobre él */
+a:hover {
+    color: #ff6600;
+}
+
+.logo{
+    width:300px;
+    height: 150px;
+    margin-top: 40px;
+    margin-left: 30px;
+    opacity: 0;
+    animation: aparecer 2s ease-in-out forwards;
+}
+
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/*DIV*/
+
+.desc{
+    animation: aparecer 2s ease-in-out forwards;
+    margin-top: 80px;
+}
+
+/*DESCRIPCIONES*/
+.sobre{
+    color: white;
+    margin-left: 30px;
+    text-decoration: underline;
+}
+
+.descsobre{
+    color: white;
+    margin-left: 30px;
+}
+
+.mision{
+    color: white;
+    margin-left: 30px;
+    text-decoration: underline;
+}
+
+.descmision{
+    color: white;
+    margin-left: 30px;
+}
+
+.exp{
+    color: white;
+    margin-left: 30px;
+    text-decoration: underline;
+}
+
+.descexp{
+    color: white;
+    margin-left: 30px;
+}
+
+.compro{
+    color: white;
+    margin-left: 30px;
+    text-decoration: underline;
+}
+
+.desccompro{
+    color: white;
+    margin-left: 30px;
+}
+
+    /* ==========================================/*
+    /* Redes */
+    
+    .redes-sociales {
+        text-align: center; /* Centra las imágenes horizontalmente */
+    }
+    
+    .redes-sociales img {
+        margin-left: 700px;
+        margin: 7px; /* Agrega un espacio entre las imágenes */
+        margin-top: 50px;
+        height: 50px;
+        width: 50px;
+    }
+
+    .insta{
+        border-radius: 20%;
+        transition: box-shadow 0.3s; 
+    }
+
+    .insta:hover{
+        box-shadow: 0 0 20px white;
+    }
+
+    .face{
+        border-radius: 50%;
+        transition: box-shadow 0.3s; 
+    }
+
+    .face:hover{
+        box-shadow: 0 0 20px white;
+    }
+
+    .wsp{
+        border-radius: 50%;
+        transition: box-shadow 0.3s; 
+    }
+
+    .wsp:hover{
+        box-shadow: 0 0 20px white;
+    }
+
+ 
+    }
+ 
+ 
+ 
+
+ /* ==========================================*/
+     /* TABLET */
+    @media (min-width: 768px) and (max-width: 990px){
+           /*  barra de navegación */
+     nav {
+        animation:shadow-drop-center 0.4s linear both
+    }
+    
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex; /* Utilizamos flexbox para alinear elementos horizontalmente */
+    }
+    
+    li {
+        margin-right: 20px; /* Espaciado entre elementos de la barra de navegación */
+        margin-left: 20px;
+    }
+    
+    /* Estilo de los enlaces */
+    a {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        animation: aparecer 2s ease-in-out forwards;
+        margin-right: 100px;
+    }
+    
+    /* Cambiar el color del enlace al pasar el cursor sobre él */
+    a:hover {
+        color: #ff6600;
+    }
+    
+    .logo{
+        width:500px;
+        height: 250px;
+        margin-top: 40px;
+        margin-left: 120px;
+        opacity: 0;
+        animation: aparecer 2s ease-in-out forwards;
+    }
+    
+    @keyframes aparecer {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+/*DESCRIPCIONES*/
+.desc{
+    animation: aparecer 2s ease-in-out forwards;
+}
+
+.sobre{
+    color: white;
+    margin-left: 30px;
+    text-decoration: underline;
+}
+
+.descsobre{
+    color: white;
+    margin-left: 30px;
+}
+
+.mision{
+    color: white;
+    margin-left: 30px;
+    text-decoration: underline;
+}
+
+.descmision{
+    color: white;
+    margin-left: 30px;
+}
+
+.exp{
+    color: white;
+    margin-left: 30px;
+    text-decoration: underline;
+}
+
+.descexp{
+    color: white;
+    margin-left: 30px;
+}
+
+.compro{
+    color: white;
+    margin-left: 30px;
+    text-decoration: underline;
+}
+
+.desccompro{
+    color: white;
+    margin-left: 30px;
+}
+    
+
+     /* ==========================================/*
+    /* Redes */
+    
+    .redes-sociales {
+        text-align: center; /* Centra las imágenes horizontalmente */
+        margin-left: 40px;
+    }
+    
+    .redes-sociales img {
+        margin-left: 9000px;
+        margin: 1px; /* Agrega un espacio entre las imágenes */
+        margin-top: 50px;
+        height: 50px;
+        width: 50px;
+    }
+
+    .insta{
+        border-radius: 20%;
+        transition: box-shadow 0.3s; 
+    }
+
+    .insta:hover{
+        box-shadow: 0 0 20px white;
+    }
+
+    .face{
+        border-radius: 50%;
+        transition: box-shadow 0.3s; 
+    }
+
+    .face:hover{
+        box-shadow: 0 0 20px white;
+    }
+
+    .wsp{
+        border-radius: 50%;
+        transition: box-shadow 0.3s; 
+    }
+
+    .wsp:hover{
+        box-shadow: 0 0 20px white;
+    }
+  
+    }
+ 
+ 
+ 
+ /* ==========================================*/
+    /* PC */
+    @media (min-width: 991px) {
+
+          /* Barra de navegación */
+    nav {
+        animation: shadow-drop-center 0.4s linear both;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        /* Utilizamos flexbox para alinear elementos horizontalmente */
+    }
+
+    li {
+        margin-right: 20px;
+        margin-left: 200px;
+        /* Espaciado entre elementos de la barra de navegación */
+    }
+
+    /* Estilo de los enlaces */
+    a {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        animation: aparecer 2s ease-in-out forwards;
+    }
+
+    /* Cambiar el color del enlace al pasar el cursor sobre él */
+    a:hover {
+        color: #ff6600;
+    }
+
+    .logo {
+        width: 500px;
+        height: 200px;
+        margin-top: 40px;
+        margin-left: 650px;
+        opacity: 0;
+        animation: aparecer 2s ease-in-out forwards;
+    }
+
+    /* Keyframes para la animación de aparecer */
+    @keyframes aparecer {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+        /* Descripciones */
+        .desc {
+            animation: aparecer 2s ease-in-out forwards;
+        }
+
+        .sobre, .mision, .exp, .compro {
+            color: white;
+            margin-left: 100px;
+            text-decoration: underline;
+        }
+
+        .descsobre, .descmision, .descexp, .desccompro {
+            color: white;
+            margin-left: 100px; /* Ajuste del margen */
+            padding: 5px; /* Agregado de espacio interno */
+            display: inline-block; /* Hace que los elementos se muestren en línea */
+        }
+        
+
+        /* Redes */
+        .redes-sociales {
+            text-align: center;
+            /* Centra las imágenes horizontalmente */
+        }
+
+        .redes-sociales img {
+            height: 50px;
+            width: 50px;
+            margin-left: 20px; /* Ajuste del margen */
+            margin: 7px;
+            /* Agrega un espacio entre las imágenes */
+            margin-top: 80px;
+        }
+
+        /* Estilos comunes para las redes sociales */
+        .insta, .face, .wsp {
+            border-radius: 20%;
+            transition: box-shadow 0.3s;
+        }
+
+        /* Efecto de sombra al pasar el cursor sobre las redes sociales */
+        .insta:hover, .face:hover, .wsp:hover {
+            box-shadow: 0 0 20px white;
+        }
+    }
+
+ 
+

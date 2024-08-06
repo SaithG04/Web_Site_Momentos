@@ -1,0 +1,644 @@
+body{
+    overflow-x: hidden;
+    background-color: black;
+}
+
+
+/* ==========================================*/
+    /* Movil */
+@media (max-width: 767px){
+    /*Barra navegacion*/
+    nav {
+        animation:shadow-drop-center 0.4s linear both
+    }
+    
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex; /* Utilizamos flexbox para alinear elementos horizontalmente */
+    }
+    
+    li {
+        margin-right: 20px; /* Espaciado entre elementos de la barra de navegación */
+        margin-left: 1px;
+    }
+    
+    /* Estilo de los enlaces */
+    a {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        animation: aparecer 2s ease-in-out forwards;
+        font-size: 20px;
+    }
+    
+    /* Cambiar el color del enlace al pasar el cursor sobre él */
+    a:hover {
+        color: #ff6600;
+    }
+    
+    .logo{
+        width:300px;
+        height: 150px;
+        margin-top: 40px;
+        margin-left: 30px;
+        opacity: 0;
+        animation: aparecer 2s ease-in-out forwards;
+    }
+    
+    
+    @keyframes aparecer {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    
+
+/* ==========================================*/
+    /* menu*/
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        animation: aparecer 2s ease-in-out forwards;
+        margin-top: 10px;
+    }
+    
+    .row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        width: 100%; /* Ajustamos el ancho al 100% */
+    }
+    
+    .column {
+        width: 45%; /* Ancho de las columnas (48% para dejar un pequeño espacio entre ellas) */
+    }
+    
+    
+    .centered-image {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .image1 {
+        display: block;
+        width: 170px;
+        height: 130px;
+        margin: 10px 0; /* Modificamos el margen para ajustar la distancia vertical */
+        border-radius: 10%;
+    }
+
+    .image1:hover{
+        transform: scale(104%);
+        box-shadow: 0 0 20px white;
+    }
+
+    .image2 {
+        display: block;
+        width: 170px;
+        height: 130px;
+        margin: 10px 0; /* Modificamos el margen para ajustar la distancia vertical */
+        border-radius: 10%;
+    }
+
+    .image2:hover{
+        transform: scale(104%);
+        box-shadow: 0 0 20px white;
+    }
+
+    .image3 {
+        display: block;
+        width: 170px;
+        height: 130px;
+        margin: 10px 0; /* Modificamos el margen para ajustar la distancia vertical */
+        border-radius: 10%;
+    }
+
+    .image3:hover{
+        transform: scale(104%);
+        box-shadow: 0 0 20px white;
+    }
+
+    .image4 {
+        display: block;
+        width: 170px;
+        height: 130px;
+        margin: 10px 0; /* Modificamos el margen para ajustar la distancia vertical */
+        border-radius: 10%;
+    }
+
+    .image4:hover{
+        transform: scale(104%);
+        box-shadow: 0 0 20px white;
+    }
+
+    .image5 {
+        display: block;
+        width: 170px;
+        height: 130px;
+        margin: auto; /* Centramos horizontalmente */
+        margin-top: auto; /* Centramos verticalmente */
+        margin-bottom: 10px; /* Agregamos margen inferior */
+        border-radius: 10%;
+    }
+
+    .image5:hover{
+        transform: scale(104%);
+        box-shadow: 0 0 20px white;
+    }
+
+    .image6{
+        border-radius: 100%;
+        height: 50px;
+        width: 50px;
+        margin-left: 300px;
+    }
+
+    .image6:hover{
+        transform: scale(104%);
+        box-shadow: 0 0 20px white;
+    }
+
+
+    /* ==========================================/*
+    
+      /* ==========================================/*
+    /* Redes */
+    
+    .redes-sociales {
+        text-align: center; /* Centra las imágenes horizontalmente */
+    }
+    
+    .redes-sociales img {
+        margin-left: 700px;
+        margin: 7px; /* Agrega un espacio entre las imágenes */
+        margin-top: 1px;
+        height: 50px;
+        width: 50px;
+    }
+
+    .insta{
+        border-radius: 20%;
+        transition: box-shadow 0.3s; 
+    }
+
+    .insta:hover{
+        box-shadow: 0 0 20px white;
+    }
+
+    .face{
+        border-radius: 50%;
+        transition: box-shadow 0.3s; 
+    }
+
+    .face:hover{
+        box-shadow: 0 0 20px white;
+    }
+
+    .wsp{
+        border-radius: 50%;
+        transition: box-shadow 0.3s; 
+    }
+
+    .wsp:hover{
+        box-shadow: 0 0 20px white;
+    }
+
+ 
+}
+
+
+/* ==========================================*/
+    /* TABLET */
+    @media (min-width: 768px) and (max-width: 990px){
+        /*  barra de navegación */
+     nav {
+         animation:shadow-drop-center 0.4s linear both
+     }
+     
+     ul {
+         list-style: none;
+         padding: 0;
+         margin: 0;
+         display: flex; /* Utilizamos flexbox para alinear elementos horizontalmente */
+     }
+     
+     li {
+         margin-right: 20px; /* Espaciado entre elementos de la barra de navegación */
+         margin-left: 20px;
+     }
+     
+     /* Estilo de los enlaces */
+     a {
+         font-family: Georgia, 'Times New Roman', Times, serif;
+         text-decoration: none;
+         color: white;
+         font-weight: bold;
+         font-size: 20px;
+         animation: aparecer 2s ease-in-out forwards;
+         margin-right: 100px;
+     }
+     
+     /* Cambiar el color del enlace al pasar el cursor sobre él */
+     a:hover {
+         color: #ff6600;
+     }
+     
+     .logo{
+         width:300px;
+         height: 150px;
+         margin-top: 20px;
+         margin-left: 230px;
+         opacity: 0;
+         animation: aparecer 2s ease-in-out forwards;
+     }
+     
+     @keyframes aparecer {
+         0% {
+             opacity: 0;
+         }
+         100% {
+             opacity: 1;
+         }
+     }
+     
+     /* ==========================================/*
+    /* menu*/
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        animation: aparecer 2s ease-in-out forwards;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+    
+    .row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    
+    .column {
+        width: 48%; /* Ancho de las columnas (48% para dejar un pequeño espacio entre ellas) */
+    }
+    
+    .centered-image {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .image1 {
+        display: block;
+        width: 300px;
+        height: 200px;
+        margin-left: 100px;
+        margin-bottom: 10px;
+        border-radius: 10%;
+    }
+
+    .image1:hover{
+        transform: scale(104%);
+        box-shadow: 0 0 20px white;
+    }
+
+    .image2 {
+        display: block;
+        width: 300px;
+        height: 200px;
+        margin-left: 100px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border-radius: 10%;
+    }
+
+    .image2:hover{
+        transform: scale(104%);
+        box-shadow: 0 0 20px white;
+    }
+
+    .image3 {
+        display: block;
+        width: 300px;
+        height: 200px;
+        margin-right: 100px;
+        margin-bottom: 10px;
+        border-radius: 10%;
+    }
+
+    .image3:hover{
+        transform: scale(104%);
+        box-shadow: 0 0 20px white;
+    }
+
+    .image4 {
+        display: block;
+        width: 300px;
+        height: 200px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border-radius: 10%;
+    }
+
+    .image4:hover{
+        transform: scale(104%);
+        box-shadow: 0 0 20px white;
+    }
+
+    .image5 {
+        display: block;
+        width: 300px;
+        height: 200px;
+        margin-bottom: 10px;
+        border-radius: 10%;
+    }
+
+    .image5:hover{
+        transform: scale(104%);
+        box-shadow: 0 0 20px white;
+    }
+
+    .image6{
+        height: 100px;
+        width: 100px;
+        border-radius: 100%;
+        margin-left: 700px;
+    }
+
+    .image6:hover{
+        transform: scale(104%);
+        box-shadow: 0 0 20px white;
+    }
+
+
+    /* ==========================================/*
+     
+    /* ==========================================/*
+    /* Redes */
+    
+    .redes-sociales {
+        text-align: center; /* Centra las imágenes horizontalmente */
+        margin-left: 90px;
+    }
+    
+    .redes-sociales img {
+        margin: 1px; /* Agrega un espacio entre las imágenes */
+        margin-top: 10px;
+        height: 50px;
+        width: 50px;
+    }
+
+    .insta{
+        border-radius: 20%;
+        transition: box-shadow 0.3s; 
+    }
+
+    .insta:hover{
+        box-shadow: 0 0 20px white;
+    }
+
+    .face{
+        border-radius: 50%;
+        transition: box-shadow 0.3s; 
+    }
+
+    .face:hover{
+        box-shadow: 0 0 20px white;
+    }
+
+    .wsp{
+        border-radius: 50%;
+        transition: box-shadow 0.3s; 
+    }
+
+    .wsp:hover{
+        box-shadow: 0 0 20px white;
+    }
+ 
+ }
+
+
+
+/* ==========================================*/
+    /* PC */
+    @media (min-width: 991px){
+
+        /* styles.css */
+        
+        /*  barra de navegación */
+        nav {
+            animation:shadow-drop-center 0.4s linear both
+        }
+        
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex; /* Utilizamos flexbox para alinear elementos horizontalmente */
+        }
+        
+        li {
+            margin-right: 20px; /* Espaciado entre elementos de la barra de navegación */
+            margin-left: 300px;
+        }
+        
+        /* Estilo de los enlaces */
+        a {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            animation: aparecer 2s ease-in-out forwards;
+        }
+        
+        /* Cambiar el color del enlace al pasar el cursor sobre él */
+        a:hover {
+            color: #ff6600;
+        }
+        
+        .logo{
+            width:500px;
+            height: 200px;
+            margin-top: 40px;
+            margin-left: 650px;
+            opacity: 0;
+            animation: aparecer 2s ease-in-out forwards;
+        }
+        
+        @keyframes aparecer {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+/* ==========================================/*
+    /* menu*/
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        animation: aparecer 2s ease-in-out forwards;
+
+    }
+    
+    .row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    
+    .column {
+        width: 48%; /* Ancho de las columnas (48% para dejar un pequeño espacio entre ellas) */
+    }
+    
+    .centered-image {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .image1 {
+        display: block;
+        width: 600px;
+        height: 400px;
+        margin-left: 100px;
+        margin-bottom: 10px;
+        border-radius: 10%;
+    }
+
+    .image1:hover{
+        transform: scale(104%);
+        box-shadow: 0 0 20px white;
+    }
+
+    .image2 {
+        display: block;
+        width: 600px;
+        height: 400px;
+        margin-left: 100px;
+        margin-top: 40px;
+        margin-bottom: 10px;
+        border-radius: 10%;
+    }
+
+    .image2:hover{
+        transform: scale(104%);
+        box-shadow: 0 0 20px white;
+    }
+
+    .image3 {
+        display: block;
+        width: 600px;
+        height: 400px;
+        margin-right: 100px;
+        margin-bottom: 10px;
+        border-radius: 10%;
+    }
+
+    .image3:hover{
+        transform: scale(104%);
+        box-shadow: 0 0 20px white;
+    }
+
+    .image4 {
+        display: block;
+        width: 600px;
+        height: 400px;
+        margin-top: 40px;
+        margin-bottom: 10px;
+        border-radius: 10%;
+    }
+
+    .image4:hover{
+        transform: scale(104%);
+        box-shadow: 0 0 20px white;
+    }
+
+    .image5 {
+        display: block;
+        width: 600px;
+        height: 400px;
+        margin-bottom: 10px;
+        border-radius: 10%;
+    }
+
+    .image5:hover{
+        transform: scale(104%);
+        box-shadow: 0 0 20px white;
+    }
+
+    .image6{
+        border-radius: 100%;
+        height: 80px;
+        width: 80px;
+        margin-left: 1700px;
+    }
+
+    .image6:hover{
+        transform: scale(104%);
+        box-shadow: 0 0 20px white;
+    }
+
+
+
+    /* ==========================================/*
+    
+
+        /* ==========================================/*
+    /* Redes */
+    
+    .redes-sociales {
+        text-align: center; /* Centra las imágenes horizontalmente */
+    }
+    
+    .redes-sociales img {
+        height: 50px;
+        width: 50px;
+        margin-left: 700px;
+        margin: 7px; /* Agrega un espacio entre las imágenes */
+        margin-top: 20px;
+    }
+
+
+    .insta{
+        border-radius: 20%;
+        transition: box-shadow 0.3s; 
+    }
+
+    .insta:hover{
+        box-shadow: 0 0 20px white;
+    }
+
+    .face{
+        border-radius: 50%;
+        transition: box-shadow 0.3s; 
+    }
+
+    .face:hover{
+        box-shadow: 0 0 20px white;
+    }
+
+    .wsp{
+        border-radius: 50%;
+        transition: box-shadow 0.3s; 
+    }
+
+    .wsp:hover{
+        box-shadow: 0 0 20px white;
+    }
+
+/* ==========================================*/
+        
+    }
