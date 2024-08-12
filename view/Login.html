@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../resources/css/Login.css" type="text/css">
     <title>Iniciar Sesión</title>
 
 </head>
@@ -12,11 +13,11 @@
 <body>
     <!-- Logo -->
     <div>
-        <img class="logo" src="resources/images/logomomentos.jpeg">
+        <img class="logo" src="../resources/images/logomomentos.jpeg">
     </div>
 
     <h2>Iniciar Sesión</h2>
-    <form action="../controller/LoginController.php" method="post">
+    <form action="../controller/LoginController.php" method="post" class="login-form">
         <label for="correo">Correo:</label>
         <input type="text" name="correo" required>
 
@@ -26,8 +27,8 @@
         <button type="submit">Iniciar Sesión</button>
     </form>
 
-    <p>¿No tienes una cuenta? <a href="RegistroCliente.php">Regístrate aquí</a><br><a href="../index.php">Volver al
-            inicio</a></p>
+    <p>¿No tienes una cuenta?</p>
+    <h1><a href="RegistroCliente.php">Regístrate aquí</a><br><a href="../index.php">Volver al inicio</a></h1>
 </body>
 
 <style>
@@ -43,6 +44,7 @@
   
     h2 {
         text-align: center; /* Centra el título */
+        animation: aparecer 2s ease-in-out forwards;
     }
 
     form {
@@ -76,6 +78,7 @@
     p {
         text-align: center; /* Centra el texto del párrafo */
         margin-top: 20px; /* Añade espacio encima del párrafo */
+        animation: aparecer 2s ease-in-out forwards;
     }
 
     a {

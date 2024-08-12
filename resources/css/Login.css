@@ -2,8 +2,6 @@ body{
     overflow-x: hidden;
     background-color: black;
 }
-
-
 /* ==========================================*/
     /* Movil */
 @media (max-width: 767px){
@@ -473,7 +471,16 @@ body{
             opacity: 0;
             animation: aparecer 2s ease-in-out forwards;
         }
+
+        h1{
+            text-align-last: center;
+            animation: aparecer 2s ease-in-out forwards;
+        }
         
+        .login-form{
+            animation: aparecer 2s ease-in-out forwards;
+        }
+
         @keyframes aparecer {
             0% {
                 opacity: 0;

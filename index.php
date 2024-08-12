@@ -11,35 +11,11 @@
 </head>
 
 <body>
-    <!-- Barra de navegación -->
-    <div class="menu-container">
-        <nav>
-            <ul class="menu">
-                <li class="menu-icon" onclick="toggleMenu()">
-                    <img src="icono.png" alt="Icono">
-                    <!-- Cuadro de opciones -->
-                    <div class="overlay" id="overlay">
-                        <div class="menu-content" id="menuContent">
-                            <?php
-                            session_start();
-                            $_SESSION["redirect_url"] = "../index.php";
-                            if (isset($_SESSION['id_cliente'])) {
-                                echo '<a href="controller/VerDatosController.php">Mi Cuenta</a><br>';
-                                echo '<a href="controller/CerrarSesion.php">Cerrar Sesión</a>';
-                            } else {
-                                echo '<a href="view/Login.html">Iniciar Sesión</a>';
-                            }
-                            ?>
-                        </div>
-                    </div>
-                </li>
-                <li><a href="index.php">Inicio</a></li>
-                <li><a href="view/Acerca_de.php">Acerca de</a></li>
-                <li><a href="view/Servicios.php">Servicios</a></li>
-                <li><a href="view/Contacto.php">Contacto</a></li>
-            </ul>
-        </nav>
-    </div>
+
+    <?php 
+        include 'view/menu.php';
+    ?>
+
 
     <!-- Logo -->
     <div>

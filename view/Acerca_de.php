@@ -14,39 +14,9 @@
 
 <body>
 
-  <!-- Encabezado de la Página -->
-  <div class="menu-container">
-    <nav>
-      <ul class="menu">
-        <!-- Ícono de menú con cuadro de opciones -->
-        <li class="menu-icon" onclick="toggleMenu()">
-          <img src="icono.png" alt="Icono">
-          <!-- Cuadro de opciones -->
-          <div class="overlay" id="overlay">
-            <div class="menu-content" id="menuContent">
-              <?php
-              // Inicia la sesión y establece la URL de redirección
-              session_start();
-              $_SESSION["redirect_url"] = "../view/Acerca_de.php";
-
-              // Verifica si el cliente está autenticado
-              if (isset($_SESSION['id_cliente'])) {
-                echo '<a href="../controller/VerDatosController.php">Mi Cuenta</a><br>';
-                echo '<a href="../controller/CerrarSesion.php">Cerrar Sesión</a>';
-              } else {
-                echo '<a href="../view/Login.html">Iniciar Sesión</a>';
-              }
-              ?>
-            </div>
-          </div>
-        </li>
-        <li><a href="../index.php">Inicio</a></li>
-        <li><a href="Acerca_de.php">Acerca de</a></li>
-        <li><a href="Servicios.php">Servicios</a></li>
-        <li><a href="Contacto.php">Contacto</a></li>
-      </ul>
-    </nav>
-  </div>
+  <?php 
+    include 'menu.php';
+  ?>
 
   <!-- Logo de Momentos -->
   <img class="logo" src="../resources/images/logomomentos.jpeg" alt="Logo de Momentos">
